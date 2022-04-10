@@ -1,8 +1,8 @@
 <template>
   <form class="form" @submit.prevent>
       <strong>Add Post</strong><br>
-      <my-input v-model:value="post.title" type="text"/><br>
-      <my-input v-model:value="post.body" type="text"/><br>
+      <my-input v-model:value="post.title" type="text" :placeholder="'post title'"/><br>
+      <my-input v-model:value="post.body" type="text" :placeholder="'post text'"/><br>
       <my-button @click="addPost">Add</my-button>
     </form>
 </template>

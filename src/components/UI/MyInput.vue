@@ -1,12 +1,13 @@
 <template>
-  <input :value="value" @input="updateInput" type="text"><br>
+  <input :value="value" @input="updateInput" type="text" :placeholder="placeholder"><br>
 </template>
 
 <script>
 export default {
   name: 'my-input',
   props: {
-    value: String
+    value: String,
+    placeholder: String
   },
   methods: {
     updateInput(event) {
